@@ -7,12 +7,13 @@
     <link rel="shortcut icon" href="recursos/favicon-16x16.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <title>MV Seguros</title>
 </head>
 <body>
     <header>
-        <nav class="container">
+        <nav class="contenedor">
             <div  class="navbar">
                 <a href="./index.html"><img src="./recursos/favicon-32x32.png" class="logo" alt="logo"></a>
                     <ul class="header__menu">
@@ -39,7 +40,7 @@
                 <img src="recursos/ciudad.jpg" alt="ciudad" class="presentacion__imagen">
         </section>
 
-        <section class="cotizador"> 
+        <!--<section class="cotizador"> 
             <h2 id="cotizar" class="cotizador__titulo">Cotizá tu seguro ahora</h2>
             <div class="cotizador__caja">
             <DIV class="cotizador__inputs">
@@ -63,9 +64,44 @@
                 <button class="cotizador__boton">Siguiente</button>
             </DIV>
             <img src="recursos/camioneta.png" alt="pickup" class="cotizador__imgauto">
-            </div>
+            </div>  
+        </section>-->
 
-            
+        <sections class="cotizador">
+            <h2 id="cotizar" class="cotizador__titulo">Cotizá tu seguro ahora</h2>
+            <form class="cotizador__inputs">
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Marca</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Ford</a></li>
+                      <li><a class="dropdown-item" href="#">Volkswagen</a></li>
+                      <li><a class="dropdown-item" href="#">Fiat</a></li>
+                      <li><a class="dropdown-item" href="#">Citroen</a></li>
+                      <li><a class="dropdown-item" href="#">Alfa Romeo</a></li>
+                      <li><a class="dropdown-item" href="#">Audi</a></li>
+                      <li><a class="dropdown-item" href="#">BMW</a></li>
+                      <li><a class="dropdown-item" href="#">Nissan</a></li>
+                      <li><a class="dropdown-item" href="#">Toyota</a></li>
+                      <li><a class="dropdown-item" href="#">Renault</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Otro</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Modelo</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Año</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Ubicación</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <button type="submit" class="btn btn-primary cotizador__boton">Siguiente</button>
+              </form>
         </section>
 
     </main>
@@ -77,5 +113,6 @@
             <p>Horarios de atención: Lun. a Vier. 10:00 Hs. a 17:00 Hs.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
