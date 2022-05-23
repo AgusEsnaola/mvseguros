@@ -410,11 +410,15 @@ footer {
     color: white;
 }
 
+
+
 .unete {
 margin: 50px;
+
 }
 
 .unete__titulo {
+
     font-family: 'Comfortaa';
     font-size: 25px;
 
@@ -428,6 +432,8 @@ margin: 50px;
     width: fit-content;
     height: fit-content;
 }
+
+
 
 .unete__boton {
     font-family: 'Comfortaa';
@@ -488,3 +494,4 @@ margin: 50px;
     width: 100%;
 
 }
+
