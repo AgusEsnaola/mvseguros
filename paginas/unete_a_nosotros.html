@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>MV Seguros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f53fefb875.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -37,11 +39,10 @@
             </div>
           </nav>  
     </header>
-    <main class="unete__pag">
-
-        <sectionc class="unete">
-            <h1 class="unete__titulo">Únete a nosotros</h1>
-            <form class="unete__inputs">
+    <main>
+        <!--<h1 class="row" class="unete__titulo" >Únete a nosotros</h1>
+        <sectionc class="row" class="unete">
+            <form class="col-sm-7" class="unete__inputs">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Nombre</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -59,31 +60,37 @@
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
                 <button type="submit" class="btn btn-primary unete__boton">Enviar información</button>
-              </form>
-        </section>
-       
-        <section class="imagenes">
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="900">
-                <img src="../recursos/carru1.jpg" class="d-block w-30" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1100">
-                <img src="../recursos/carru2.jpg" class="d-block w-30" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../recursos/carru3.jpg" class="d-block w-30" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+              </form>-->
+
+              <div class="container">
+                <h1 class="unete__titulo">Únete a nosotros</h1>
+                <div class="unete__contenedor">
+                  <div class="unete__form">
+                    <h3>Envianos tus datos</h3>
+                    <form action="">
+                      <p>
+                        <label for="fullname">Nombre</label>
+                        <input type="text" name="fullname">
+                      </p>
+                      <p>
+                        <label for="Email">Apellido</label>
+                        <input type="email" name="email">
+                      </p>
+                      <p>
+                        <label>Teléfono</label>
+                        <input type="tel" name="phone">
+                      </p>
+                      <p>
+                        <label>Número de matricula</label>
+                        <input type="matricula" name="matricula">
+                      </p>
+                      <p class="block">
+                        <button type="submit">
+                          Enviar
+                        </button>
+                      </p>
+                    </form>
+                  </div>
         </section>
         
     </main>
