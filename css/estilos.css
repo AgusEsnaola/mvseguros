@@ -247,8 +247,7 @@
 
 footer {
         display: grid;
-        grid-template-columns: 100px 40px 100px;
-        grid-row: 50% 50% ;
+        grid-template-columns: 1fr 1fr 2fr;
         background-color: black ;
         background-size: auto;
         gap: 10px; 
@@ -273,6 +272,12 @@ footer {
     height: 100px;
 }
 
+.footer ul {
+    color: white;
+    list-style: none;
+    text-align: right;
+}
+
 
 .container {
     box-sizing: border-box;
@@ -281,6 +286,7 @@ footer {
     color: white;
     font-family: 'Comfortaa';
     padding: 0 1.5em;
+    margin-bottom: 40px;
 }
 
 .content {
@@ -297,7 +303,7 @@ footer {
 
 .contacto__titulo {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .contacto__contenedor > * {
@@ -379,46 +385,36 @@ footer {
     }
 }
 
-
-
-
-
 .productores {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-content: center;
+    box-sizing: border-box;
+    background: linear-gradient(115deg, #232B29, #559585);
+    border-radius: 6px;
+    color: white;
+    font-family: 'Comfortaa';
+    padding: 0 1.5em;
+    margin-bottom: 40px;
 }
 
 .productores__titulo {
-    font-family: 'Comfortaa';
-    font-size: 25px;
-    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2em;
 }
 
-.productores__inputs {
+.mb-3 {
     font-family: 'Comfortaa';
     background: linear-gradient(115deg, #232B29, #559585);
     color: white;
-    width: fit-content;
-    height: fit-content;
-    margin-bottom: 50px;
+
 }
 
 
 .productores__boton {
-    grid-area: "productores__boton";
-    font-family: 'Comfortaa';
-    font-size: 12px;
-    background-color: #070707;
+    background: black;
     color: white;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    text-align: center;
-    width: 100px;
-    height: 36px;
-    border-radius: 6px;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1em;
 }
 
 .quienessomos {
@@ -427,6 +423,7 @@ footer {
     grid-row: 10% 80% 10%;
     gap: 10px;
     column-gap: 100px;
+    margin-bottom: 40px;
 }
 
 .quienessomos__titulo {
@@ -538,7 +535,7 @@ footer {
 
 .unete__titulo {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .unete__contenedor > * {
@@ -585,7 +582,6 @@ footer {
     text-align: center;
     margin: 0 0 1rem 0;
 }
-
 
 
 
