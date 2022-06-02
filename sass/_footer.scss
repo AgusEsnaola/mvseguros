@@ -1,0 +1,31 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    background-color: black;
+    background-size: auto;
+    gap: 10px;
+    
+    ul{
+        color: $color-principal;
+        list-style: none;
+        text-align: right;
+    }
+    
+ }
+  
+  .footer__logo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    width: 100px;
+    height: 100px; }
+  
+  .footer__informacion {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    color: $color-principal;
+    width: 350px;
+    height: 100px; }
