@@ -4,7 +4,18 @@
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-content: center;
+    background-color: $color-principal;
+    height: 1.5rem;
+    border-radius: 6px;
+ }
+
+ .header__menu {
+     li{
+         color: $color-secundario;
+     }
+ }
   
   .logo {
     width: 40px;
@@ -19,7 +30,7 @@
   
   .navbar ul li a {
     text-decoration: none;
-    color: $color-principal;
+    color: $color-secundario;
     font-family: $font-secundaria;
     font-size: 18px;
     font-weight: 10px; }
@@ -28,7 +39,7 @@
     content: "";
     height: 3px;
     width: 0%;
-    background: white;
+    background: $color-secundario;
     position: absolute;
     left: 0;
     bottom: -12px;
@@ -36,7 +47,76 @@
   
   .navbar ul li :hover::before {
     width: 100%; }
+  
+  .portada {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-row: 10% 80% 10%;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../recursos/principal.jpg);
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    color: $color-principal;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0px;
 
+    &__subtitulo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        font-family: $font-secundaria;
+        font-size: 15px;
+        list-style-type: none;
+        text-decoration: none;
+        color: $color-principal;
+        font-style: normal;
+        font-weight: 500;
+    }
+    &__titulo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-family: $font-secundaria;
+        font-size: 22px;
+        color: $color-principal;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 42px;
+        width: 500px;
+    }
+}
+  
+  
+  .portada__boton {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: left;
+    background-color: $color-secundario;
+    border-radius: 6px; 
+    width: fit-content;
+    height: fit-content;
+
+    a{
+        font-family: $font-secundaria;
+        list-style-type: none;
+        text-decoration: none;
+        color: $color-principal;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+    }
+   
+}
     /*NAVBAR PAGINAS*/
 
     .navbar__paginas {
@@ -48,7 +128,7 @@
         justify-content: space-between;
         a {
             text-decoration: none;
-            color: black;
+            color: $color-secundario;
             font-family: $font-secundaria;
             font-size: 18px;
             font-weight: 10px;
@@ -73,7 +153,7 @@
         content: "";
         height: 3px;
         width: 0%;
-        background: black;
+        background: $color-secundario;
         position: absolute;
         left: 0;
         bottom: -12px;
@@ -81,3 +161,11 @@
       
       .navbar__paginas ul li :hover::before {
         width: 100%; }
+
+        
+@media (max-width: 700px) {
+    .navbar-nav {
+        background-color: white;
+        margin-top: 100px;
+    }
+ }

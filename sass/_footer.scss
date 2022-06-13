@@ -1,7 +1,7 @@
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    background-color: black;
+    background-color: $color-secundario;
     background-size: auto;
     gap: 10px;
     
@@ -29,3 +29,20 @@ footer {
     color: $color-principal;
     width: 350px;
     height: 100px; }
+
+    @media (max-width: 700px) {
+        footer {
+            display: block;
+        }
+        .footer__logo {
+            display: none;
+        }
+        .footer__informacion {
+            width: 100%;
+            text-align: center;
+        }
+        footer ul li {
+            width: 100%;
+            text-align: center;
+        }
+        }
